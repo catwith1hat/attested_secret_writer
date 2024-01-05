@@ -1,4 +1,4 @@
-package main
+package attested_secret_writer
 
 import (
 	"context"
@@ -63,8 +63,4 @@ func WriteSecret() {
 	if err := os.WriteFile("/secret", secret, 0600); err != nil {
 		log.Fatal(err)
 	}
-}
-
-func main() {
-	WriteSecret()
 }

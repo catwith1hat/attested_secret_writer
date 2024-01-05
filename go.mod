@@ -1,4 +1,4 @@
-module server
+module github.com/catwith1hat/attested_secret_writer
 
 go 1.20
 
