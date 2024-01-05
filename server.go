@@ -38,7 +38,7 @@ func GetOneSecret() ([]byte, error) {
 			w.WriteHeader(http.StatusOK)
 		})
 
-		if err := srv.ListenAndServe(); err != nil {
+		if err := srv.ListenAndServeTLS("", ""); err != nil {
 			if err != http.ErrServerClosed {
 				log.Fatal(err)
 			}
